@@ -1,2 +1,4 @@
 kling https://api.replicate.com/v1/models/kwaivgi/kling-v2.5-turbo-pro/predictions
 
+googleveo 3 https://api.replicate.com/v1/models/google/veo-3/predictions
+
