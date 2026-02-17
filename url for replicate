@@ -1,4 +1,16 @@
 kling https://api.replicate.com/v1/models/kwaivgi/kling-v2.5-turbo-pro/predictions
+{
+  "input": {
+    "image": "{{ $json.image_url }}",
+    "prompt": "Create a 4-second vertical cinematic video with audio.\n\nTheme: {{$('Unbundle Prompts').item.json.Idea}}\nLocation: {{$('Unbundle Prompts').item.json.Place}} — {{$('Unbundle Prompts').item.json.Environment}}\nCharacter: the character model in the provided image\nScene 1: {{$('Unbundle Prompts').item.json['Scene 1']}} (mid-shot / upper-body framing, full face, head, and neck clearly visible)\nScene 2: {{$('Unbundle Prompts').item.json['Scene 2']}} (mid-shot, full face and upper-body visible, show grinding action clearly)\nScene 3: {{$('Unbundle Prompts').item.json['Scene 3']}} (mid-shot, full face and upper-body visible, emphasize grinding motion)\nThe video should clearly show the character model performing the actions described in each scene with mid-shot / upper-body framing, full face, head, and neck visible.\nStyle: cinematic, ASMR-style tactile motions, smooth camera, consistent lighting.",
+    "duration": 5,
+    "aspect_ratio": "9:16",
+    "guidance_scale": 0.65,
+    "motion_strength": 0.75
+  }
+}
+
+
 
 googleveo 3 https://api.replicate.com/v1/models/google/veo-3/predictions
 
